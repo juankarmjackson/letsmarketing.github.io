@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    padding: 10px;
+}
+
+header img{
+    width: 200px;
+}
+
+.googlemybusiness{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #00A2FF;
+    color: white;
+}
+
+.googlemybusiness .text{
+    padding: 10px;
+    margin: 10px;
+}
+
+.googlemybusiness img{
+    width: 350px;
+    filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.7));
+}
+
+
+.googlemybusiness ul li{
+    font-size: 25px;
+}
+
+
+.box-formulario{
+    position: relative;
+}
+
+.box-formulario #flecha{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    /* right: calc(100% - 10px); */
+}
+    
+.formulario{
+    width: 600%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.formulario button{
+    font-size: 25px;
+    border-radius: 30px;
+    background: orange;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    background: #00A2FF;
+    box-shadow: 0px 0px 10px 6px #00A2FF;
+    color: white; 
+}
+
+.pregunta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    flex-direction: column;
+}
+
+.pregunta .caja-pregunta{
+    padding: 10px;
+}
+
+.pregunta input[type='text']{
+    width: 90%;
+    margin: auto;
+}
+
+.pregunta label{
+    width: 90%;
+    margin: auto;
+}
+
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+
+/* RANGE */
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 20px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #03a9f4;
+    border-radius: 25px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #03a9f4;
+  }
+  .range-wrap{
+    position: relative;
+    width: 60%;
+  }
+  .range-value{
+    position: absolute;
+    top: -50%;
+  }
+  .range-value span{
+    width: 45px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #03a9f4;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+  }
+  .range-value span:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #03a9f4;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -1px;
+  }
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+@media (max-width: 760px) {
+    .box-formulario #flecha{
+        width: 20%;
+    transform: translate(7px,32px) rotate(31deg);
+        
+    }
+  }

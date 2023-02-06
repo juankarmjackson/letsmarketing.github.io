@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	<meta name="referrer" content="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a7198e186.js" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="AppCarta.png"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lets Marketing | Google Business</title>
+</head>
+<body>
+    <header>
+        <img src="img/letsmarketing.svg">
+    </header>
+    <section class="googlemybusiness">
+        <div class="text">
+            <h1>Google My Business</h1>
+            <ul>
+                <li>Ficha Google My Business Actualizada y Optimizada.</li>
+                <li>Plan de SEO Local para Tu Negocio</li>
+                <li>Google Ads para aparecer primero en las posiciones</li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="img/seo.png">
+        </div>
+    </section>
+    <section class="box-formulario">
+        <h1 style="text-align: center; max-width: 600px; margin: 20px auto; padding: 10px;">Buscamos 5 Empresas Que Quieran Duplicar Sus Resultados Este Mes</h1>
+        <div class="formulario" id="formulario">
+            <div class="pregunta" id="pregunta1">
+                <button id="botonPregunta1">Presupuestarme Ahora</button>
+            </div>
+            <div class="pregunta" id="pregunta2">
+                <label for="">Nombre de Contacto</label>
+                <input type="text">
+                <button id="botonPregunta2">Continuar</button>
+            </div>
+            <div class="pregunta" id="pregunta3">
+                <label for="">¿Cómo prefieres que te contactemos?</label>
+                <div class="caja-pregunta"><input type="checkbox" id="opcion1"><span>Llámame</span></div>
+                <div class="caja-pregunta"><input type="checkbox" id="opcion2"><span>Enviame Presupuesto al Email</span></div>
+                <div class="caja-pregunta"><input type="checkbox" id="opcion3"><span>Escribeme en Whatsapp</span></div>
+            </div>
+            <div class="pregunta" id="pregunta4">
+                <div id="llamada" style="display: none;">
+                    <label for="">Déjanos tu Contacto para Llamarte</label>
+                    <input type="text">
+                    <!-- <button id="botonPregunta4-1">Continuar</button> -->
+                </div>
+                <div id="email" style="display: none;">
+                    <label for="">Déjanos tu email y te enviamos propuesta y presupuesto </label>
+                    <input type="text">
+                    <!-- <button id="botonPregunta4-2">Continuar</button> -->
+                </div>
+                <div id="whatsapp" style="display: none;">
+                    <label for="">Déjanos tu Whatsapp Personal y te Escribimos </label>
+                    <input type="text">
+                    <!-- <button id="botonPregunta4-3">Continuar</button> -->
+                </div>
+                <button id="botonPregunta4">Continuar</button>
+            </div>
+            <div class="pregunta" id="pregunta5">
+                <label for="">¿Qué Resultados Buscas?</label>
+                <!-- <input type="textarea" placeholder="Guianos para poder plantearte una buena estrategia a un precio adecuado"> -->
+                <textarea id="" cols="30" rows="10" placeholder="Guianos para poder plantearte una buena estrategia a un precio adecuado"></textarea>
+                <button id="botonPregunta5">Continuar</button>
+            </div>
+            <div class="pregunta" id="pregunta6">
+                <label for="">¿Qué Presupuesto Tienes?</label>
+                <div class="range-wrap" id="range2">
+                    <div class="range-value" id="rangeV"></div>
+                    <input id="range" type="range" min="500" max="10000" value="500" step="1">
+                    </div>
+                    
+                    <div id="thanks" style="display: none;">
+                        <h2 style="max-width: 350px;">Muchas Gracias. Nos Pondremos en Contacto contigo lo antes posible.</h2>
+
+                    </div>
+
+                    <button id="botonPregunta6">Continuar</button>
+                    <script type="module">
+                        // Pass in the id of an element
+                        let confetti = new Confetti('botonPregunta6');
+                
+                        // Edit given parameters
+                        confetti.setCount(75);
+                        confetti.setSize(1);
+                        confetti.setPower(25);
+                        confetti.setFade(false);
+                        confetti.destroyTarget(true);
+                
+                    </script>
+                </div>
+                
+            </div>
+        <img src="img/flecha.png" id="flecha" alt="flecha">
+    </section>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/5.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/5.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/4.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="confetti.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+  	duraction: 1000,
+  });
+
+    const formulario = document.getElementById('formulario');
+    const pregunta1 = document.getElementById('pregunta1');
+    const botonPregunta1 = document.getElementById('botonPregunta1');
+    const pregunta2 = document.getElementById('pregunta2');
+    const botonPregunta2 = document.getElementById('botonPregunta2');
+    const pregunta3 = document.getElementById('pregunta3');
+    const opcion1 = document.getElementById('opcion1');
+    const opcion2 = document.getElementById('opcion2');
+    const opcion3 = document.getElementById('opcion3');
+    const pregunta4 = document.getElementById('pregunta4');
+    const botonPregunta4 = document.getElementById('botonPregunta4');
+    const llamada = document.getElementById('llamada');
+    const email = document.getElementById('email');
+    const whatsapp = document.getElementById('whatsapp');
+    const pregunta5 = document.getElementById('pregunta5');
+    const botonPregunta5 = document.getElementById('botonPregunta5');
+    const pregunta6 = document.getElementById('pregunta6');
+
+
+    botonPregunta1.addEventListener('click', function(){
+        formulario.style.width = "500%";
+        pregunta1.style.display = "none";
+    })
+
+    botonPregunta2.addEventListener('click', function(){
+        formulario.style.width = "400%";
+        pregunta2.style.display = "none";
+    })
+
+    opcion1.addEventListener('click', function(){
+        formulario.style.width = "300%";
+        pregunta3.style.display = "none";
+        llamada.style.display = "flex";
+        llamada.style.flexDirection = "column";
+    })
+
+    opcion2.addEventListener('click', function(){
+        formulario.style.width = "300%";
+        pregunta3.style.display = "none";
+        email.style.display = "flex";
+        email.style.flexDirection = "column";
+    })
+
+    opcion3.addEventListener('click', function(){
+        formulario.style.width = "300%";
+        pregunta3.style.display = "none";
+        whatsapp.style.display = "flex";
+        whatsapp.style.flexDirection = "column";
+    })
+
+    botonPregunta4.addEventListener('click', function(){
+        formulario.style.width = "200%";
+        pregunta4.style.display = "none";
+    })
+
+    botonPregunta5.addEventListener('click', function(){
+        formulario.style.width = "100%";
+        pregunta5.style.display = "none";
+    })
+
+    const
+  range = document.getElementById('range'),
+  rangeV = document.getElementById('rangeV'),
+  setValue = ()=>{
+    const
+      newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
+      newPosition = 10 - (newValue * 0.2);
+    rangeV.innerHTML = `<span>${range.value}€</span>`;
+    rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+  };
+document.addEventListener("DOMContentLoaded", setValue);
+range.addEventListener('input', setValue);
+
+const thanks = document.getElementById('thanks');
+const range2 = document.getElementById('range2');
+
+botonPregunta6.addEventListener('click', function(){
+        range2.style.display = "none";
+        thanks.style.display = "block";
+
+    })
+
+
+</script>
+    <script>
+        window.VIDEOASK_EMBED_CONFIG = {
+          "kind": "widget",
+          "url": "https://www.videoask.com/ftxrdm1br",
+          "options": {
+            "widgetType": "VideoThumbnailExtraLarge",
+            "text": "Comenzar ahora",
+            "backgroundColor": "#00E2CF",
+            "position": "bottom-right",
+            "dismissible": false
+          }
+        }
+        </script>
+        <script src="https://www.videoask.com/embed/embed.js"></script>
+</body>
+</html>
