@@ -77,7 +77,7 @@
                     <button id="botonPregunta5">Continuar</button>
                 </div>
                 <div class="pregunta" id="pregunta6">
-                    <label for="">¿Qué Presupuesto Tienes?</label>
+                    <label for="" id="labelpregunta6">¿Qué Presupuesto Tienes?</label>
                     <div class="range-wrap" id="range2">
                         <div class="range-value" id="rangeV"></div>
                         <input id="range" type="range" min="500" max="10000" value="500" step="1">
@@ -239,10 +239,14 @@ range.addEventListener('input', setValue);
 
 const thanks = document.getElementById('thanks');
 const range2 = document.getElementById('range2');
+const labelpregunta6 = document.getElementById('labelpregunta6');
+const imagenFlecha = document.getElementById('flecha');
 
 botonPregunta6.addEventListener('click', function(){
         range2.style.display = "none";
         thanks.style.display = "block";
+        labelpregunta6.style.display = "none";
+        imagenFlecha.style.display = "none";
 
     })
 

@@ -54,7 +54,7 @@ header img{
 .box-formulario #flecha{
     width: 200px;
     position: absolute;
-    top: 0;
+    top: 70px;
     /* right: calc(100% - 10px); */
 }
     
@@ -98,7 +98,14 @@ header img{
 }
 
 .pregunta input[type='text']{
-    width: 90%;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.pregunta input[type='range']{
+    /* width: 90%;
+    max-width: 500px; */
     margin: auto;
 }
 
@@ -210,10 +217,27 @@ input[type=range] {
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 920px) {
     .box-formulario #flecha{
         width: 20%;
     transform: translate(7px,32px) rotate(31deg);
         
     }
   }
+
+
+  @media (max-width: 600px) {
+    .box-formulario #flecha{
+        transform: translate(0,57px) rotate(31deg); 
+    }
+
+    .pregunta input[type='text'] {
+        width: 50%;
+    }
+
+    .slider .slide-track {
+        width: calc(200px * 10);
+    }
+  }
+
+  
