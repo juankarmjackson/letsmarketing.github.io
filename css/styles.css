@@ -1,8 +1,9 @@
+
 body {
     margin: 0;
     font-family: "Montserrat";
     font-weight: 700;
-    overflow-x: hidden;
+    
 }
 
 header{
@@ -17,6 +18,10 @@ header img{
     width: 200px;
 }
 
+
+.caja-contenido{
+    overflow-x: hidden ;
+}
 .googlemybusiness{
     display: flex;
     justify-content: center;
